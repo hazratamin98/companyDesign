@@ -11,6 +11,7 @@ import {
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false)
+
   return (
     <nav className="Navbar">
       <div className="logo">
@@ -19,9 +20,10 @@ const Navbar = () => {
       </div>
       <div className="combain">
         <ul
+          onClick={showMediaIcons}
           // className="nav__links"
           className={
-            showMediaIcons ? "nav__links mobile_menu_link " : "nav__links"
+            showMediaIcons ? "nav__links  mobile_menu_link " : "nav__links"
           }
         >
           <li className="active">
