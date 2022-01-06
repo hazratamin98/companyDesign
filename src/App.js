@@ -20,32 +20,18 @@ function App() {
       <Navbar />
 
       <Switch>
-        <Route path="/">
-          <Home />
-        </Route>
-        <Route exact path="/About">
-          <About />
-        </Route>
+        <Route exact path="/" component={Home} />
+        <Route path="/About" component={About} />
 
-        <Route path="/Blog">
-          <Blog />
-        </Route>
+        {/* <Route path="/Blog" component={Blog} /> */}
 
-        <Route path="/Contact">
-          <Contact />
-        </Route>
+        <Route path="/Contact" component={Contact} />
 
-        <Route path="/Portfolio">
-          <Portfolio />
-        </Route>
+        <Route path="/Portfolio" component={Portfolio} />
 
-        <Route path="/services">
-          <Services />
-        </Route>
+        <Route path="/services" component={Services} />
 
-        <Route path="/OurTeam">
-          <OurTeam />
-        </Route>
+        <Route path="/OurTeam" component={OurTeam} />
       </Switch>
       <Footer />
     </div>
