@@ -1,9 +1,9 @@
-import React, { Component } from "react"
-import Slider from "react-slick"
+import React, { Component } from "react";
+import Slider from "react-slick";
 // import { baseUrl } from "./config"
-import slideone from "../img/slide/slide-1.jpg"
-import slidetwo from "../img/slide/slide-2.jpg"
-import slidethree from "../img/slide/slide-3.jpg"
+import slideone from "../img/slide/slide-1.jpg";
+import slidetwo from "../img/slide/slide-2.jpg";
+import slidethree from "../img/slide/slide-3.jpg";
 
 export default class LazyLoad extends Component {
   render() {
@@ -14,21 +14,21 @@ export default class LazyLoad extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-    }
+    };
     return (
       <div style={{ width: "100%" }}>
         <Slider {...settings}>
           <div>
-            <img className="slider_img" src={slideone} />
+            <img className="slider_img" alt="slider 1" src={slideone} />
           </div>
           <div>
-            <img className="slider_img" src={slidetwo} />
+            <img className="slider_img" alt="slider 2" src={slidetwo} />
           </div>
           <div>
-            <img className="slider_img" src={slidethree} />
+            <img className="slider_img" alt="slider 3" src={slidethree} />
           </div>
         </Slider>
       </div>
-    )
+    );
   }
 }

@@ -1,19 +1,19 @@
-import React, { useEffect } from "react"
-import P_ONE from "../img/team/team-1.jpg"
-import P_TWO from "../img/team/team-2.jpg"
-import P_THREE from "../img/team/team-3.jpg"
-import P_FOUR from "../img/team/team-4.jpg"
+import React, { useEffect } from "react";
+import P_ONE from "../img/team/team-1.jpg";
+import P_TWO from "../img/team/team-2.jpg";
+import P_THREE from "../img/team/team-3.jpg";
+import P_FOUR from "../img/team/team-4.jpg";
 
-import Footer from "./Footer"
+import Footer from "./Footer";
 
-import AOS from "aos"
-import "aos/dist/aos.css" // You can also use <link> for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 
 const OurTeam = () => {
   useEffect(() => {
-    AOS.init({ duration: "1800" })
-  }, [])
+    AOS.init({ duration: "1800" });
+  }, []);
   return (
     <section data-aos="fade-up" className="ourteam">
       <div className="heaading_team">
@@ -37,7 +37,7 @@ const OurTeam = () => {
         </div>
 
         <div className="card_1" data-aos="fade-right">
-          <img src={P_TWO} alt="p-one" />
+          <img src={P_TWO} alt="p-two" />
           <div className="card_container">
             <h1> Sarah Jhonson</h1>
             <p>Product Manager</p>
@@ -45,7 +45,7 @@ const OurTeam = () => {
         </div>
 
         <div className="card_1" data-aos="fade-left">
-          <img src={P_THREE} alt="p-one" />
+          <img src={P_THREE} alt="p-three" />
           <div className="card_container">
             <h1> William Anderson</h1>
             <p>CTO</p>
@@ -53,7 +53,7 @@ const OurTeam = () => {
         </div>
 
         <div className="card_1" data-aos="fade-up">
-          <img src={P_FOUR} alt="p-one" />
+          <img src={P_FOUR} alt="p-four" />
           <div className="card_container">
             <h1>Amanda Jepson</h1>
             <p>Accountant</p>
@@ -61,7 +61,7 @@ const OurTeam = () => {
         </div>
       </section>
     </section>
-  )
-}
+  );
+};
 
-export default OurTeam
+export default OurTeam;

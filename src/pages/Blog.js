@@ -1,20 +1,20 @@
-import React, { useEffect } from "react"
-import Footer from "./Footer"
-import blg1 from "../img/blog-1.jpg"
-import blg2 from "../img/blog-2.jpg"
-import blg3 from "../img/blog-3.jpg"
+import React, { useEffect } from "react";
+import Footer from "./Footer";
+import blg1 from "../img/blog-1.jpg";
+import blg2 from "../img/blog-2.jpg";
+import blg3 from "../img/blog-3.jpg";
 
-import AOS from "aos"
-import "aos/dist/aos.css" // You can also use <link> for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 const Blog = () => {
   useEffect(() => {
-    AOS.init({ duration: "1400" })
-  }, [])
+    AOS.init({ duration: "1400" });
+  }, []);
   return (
     <div className="p_blog">
       <div className="blog" data-aos="fade-up">
-        <img src={blg1} />
+        <img src={blg1} alt="blog 1" />
         <h1>
           Dolorum optio tempore voluptas dignissimos <br /> cumque fuga qui
           quibusdam quia reiciendis
@@ -90,7 +90,7 @@ const Blog = () => {
       </div>
 
       <div className="blog" data-aos="fade-up">
-        <img src={blg2} />
+        <img src={blg2} alt="blog 2" />
         <h1>Nisi magni odit consequatur autem nulla dolorem</h1>
         <div>
           <div className="blog_span">
@@ -164,7 +164,7 @@ const Blog = () => {
       </div>
 
       <div className="blog" data-aos="fade-up">
-        <img src={blg3} />
+        <img src={blg3} alt="blog 3" />
         <h1>
           Possimus soluta ut id suscipit ea ut. In quo quia et <br /> soluta
           libero sit sint.
@@ -237,7 +237,7 @@ const Blog = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;
