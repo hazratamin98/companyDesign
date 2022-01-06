@@ -20,10 +20,10 @@ function App() {
       <Navbar />
 
       <Switch>
-        <Route exact path="/">
+        <Route path="/">
           <Home />
         </Route>
-        <Route path="/About">
+        <Route exact path="/About">
           <About />
         </Route>
 
