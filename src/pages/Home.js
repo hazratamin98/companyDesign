@@ -4,7 +4,7 @@ import AOS from "aos"
 import "aos/dist/aos.css" // You can also use <link> for styles
 
 import Navbar from "./Navbar"
-import background from "../img/slide/slide-2.jpg"
+
 import Portfolio from "./Portfolio"
 import Services from "./Services"
 import Footer from "./Footer"
@@ -39,12 +39,11 @@ const Home = () => {
         </div>
       </div>
       <About />
-     
+
       <Services />
 
       <Portfolio />
       {/* <OurTeam /> */}
-      <Footer />
     </section>
   )
 }

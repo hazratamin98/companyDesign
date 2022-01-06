@@ -16,7 +16,6 @@ const Navbar = () => {
     <nav className="Navbar">
       <div className="logo">
         <span className="COM">DISCRETE</span>
-        <span>SOL </span>
       </div>
       <div className="combain">
         <ul
@@ -44,9 +43,9 @@ const Navbar = () => {
           <li>
             <Link to="/Portfolio">PORTFOLIO</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/Pricing">PRICING</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/Blog">BLOG</Link>
           </li>
@@ -62,7 +61,14 @@ const Navbar = () => {
         </div>
       </div>
       <svg
-        onClick={() => setShowMediaIcons(!showMediaIcons)}
+        onClick={() => {
+          if (!showMediaIcons) {
+            document.body.style.overflowY = "hidden"
+          } else {
+            document.body.style.overflowY = "visible"
+          }
+          setShowMediaIcons(!showMediaIcons)
+        }}
         xmlns="http://www.w3.org/2000/svg"
         class="hum_menu"
         fill="none"

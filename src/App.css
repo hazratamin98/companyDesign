@@ -7,23 +7,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: "Open Sans", sans-serif;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-}
-html {
-  scroll-behavior: smooth;
-}
 
 .COM {
   color: #1bbd36;
 }
 .slider_img {
-  display: block;
-  width: 100%;
-  height: 700px !important;
+  max-width: 100%;
+  min-height: 500px;
+  object-fit: cover;
 }
 
 .logo span {
@@ -56,9 +47,9 @@ html {
   list-style-type: none;
   text-decoration: none;
   transition: 0.3s;
-  font-size: 13px;
+  font-size: 15px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   font-family: "Roboto", sans-serif;
 }
 
@@ -460,107 +451,6 @@ textarea {
   background-color: #33b14e;
 }
 
-/********* Pricing page **********/
-.all_cards {
-  display: flex;
-}
-
-.card_pricing {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* max-width: 300px; */
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  height: 100vh;
-  width: 19%;
-  height: 70%;
-  margin-top: 80px;
-  margin-bottom: 40px;
-}
-.card_pricing .title {
-  font-weight: 400;
-
-  padding: 20px 15px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #847872;
-  background: #f8f8f8;
-}
-
-.btn_card {
-  background-color: #f8f8f8;
-  padding: 20px;
-}
-
-.price {
-  color: grey;
-  font-size: 22px;
-}
-
-.card_pricing button {
-  background: #1bbd36;
-
-  /* display: inline-block; */
-  padding: 8px 35px 10px 35px;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  border: 2px solid #1bbd36;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.do_it {
-  line-height: 40px;
-  padding: 20px 15px;
-}
-.line_through {
-  text-decoration: line-through;
-  color: #847872;
-}
-.num {
-  font-size: 40px;
-  color: #1bbd36;
-}
-sup {
-  font-size: 30px;
-  top: -15px;
-  left: -3px;
-  color: #1bbd36;
-}
-.card {
-  box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
-}
-.month {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-#business {
-  background-color: #1bbd36;
-  color: #f8f8f8;
-}
-
-.card_pricing button:hover {
-  opacity: 0.7;
-}
-
-.paragrph {
-  width: 100vw;
-  height: 100vh;
-  background-color: #f8f8f8;
-}
-
-.heading {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
 /******** Features **********/
 
 .feature_title {
@@ -704,6 +594,10 @@ sup {
 /**** Responsive ******/
 
 @media only screen and (max-width: 539px) {
+  body {
+    width: 100%;
+    min-width: 100%;
+  }
   .portfolio .images {
     display: flex;
     flex-direction: column;
@@ -716,21 +610,25 @@ sup {
 
     padding: 0 20px 0 20px;
   }
+  /* .Navbar {
+    display: none;
+  }
+  .img_text {
+    display: none;
+  } */
   .cards {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(1, 1fr);
-    /* padding: 20px 110px 20px 110px; */
-    /* width: 100;
-    height: 20%;
-    gap: 20px; */
+    padding: 0px 18px 0px 18px;
   }
   .card {
+    border: 1px solid rgb(236, 235, 234);
     width: 100%;
-    padding: 10px 0 10px 0;
+    padding: 80px 0px 80px 18px;
   }
   .copyrighy {
-    width: 300px;
+    max-width: 300px;
     margin-bottom: 10px;
   }
   .copyrighy p {
@@ -778,9 +676,9 @@ sup {
     background-repeat: no-repeat;
   }
   .slider_img {
-    position: relative;
-    width: 100%;
-    height: 600px !important;
+    max-width: 100%;
+    /* height: auto; */
+    object-fit: cover;
   }
   .img_text {
     position: absolute;
@@ -797,6 +695,7 @@ sup {
   }
   .blog p {
     font-size: 12px;
+    font-weight: 600;
   }
   .blog_span {
     font-size: 10px;
@@ -807,10 +706,16 @@ sup {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
   }
-  .about__body h3 {
+  .about__right p {
     font-weight: 400;
-
-    font-size: 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+  }
+  .check {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
     font-family: "Montserrat", sans-serif;
   }
 
@@ -859,16 +764,36 @@ sup {
 
   .heaading_team p {
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 12px;
-    font-weight: 600;
+    margin-bottom: 34px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 15px;
 
     color: #212529;
   }
   .hum_menu {
-    height: 50px;
+    height: 30px;
     display: block;
     margin-left: 2px;
+  }
+  .underline {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 1.5px;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .icon {
+    font-size: 17px;
+    display: flex;
+    /* grid-gap: 10px; */
+    gap: 7px;
+    color: #a0a0a0;
   }
   .mobile_menu_link {
     position: relative;
@@ -880,8 +805,10 @@ sup {
     position: fixed;
     display: flex;
     flex-direction: column;
-    margin: 20px 0 0 80px;
+    padding: 17px 240px 0 18px;
+    margin: 57px 0 0 -193px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px;
+    border-radius: 15px;
   }
 
   .down__wrapper {

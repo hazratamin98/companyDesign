@@ -114,8 +114,6 @@ const Contact = () => {
           <div className="email_text"> {result ? <Result /> : null}</div>
         </form>
       </section>
-
-      <Footer />
     </div>
   )
 }

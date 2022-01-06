@@ -236,7 +236,6 @@ const Blog = () => {
           </button>
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

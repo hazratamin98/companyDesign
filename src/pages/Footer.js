@@ -1,7 +1,7 @@
-import React,{useEffect} from "react"
+import React, { useEffect } from "react"
 
-import AOS from 'aos'
-import 'aos/dist/aos.css' // You can also use <link> for styles
+import AOS from "aos"
+import "aos/dist/aos.css" // You can also use <link> for styles
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons"
@@ -16,8 +16,8 @@ import { faSkype } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = () => {
   useEffect(() => {
-   AOS.init({duration:"1800"})
-},[])
+    AOS.init({ duration: "1800", once: true })
+  }, [])
   return (
     <section data-aos="fade-up" className="footer">
       <div className="up__parts">
@@ -133,7 +133,7 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="down__parts" >
+      <div className="down__parts">
         <div className="copyrighy">
           {" "}
           &copy; <span>Company </span> All Rights Reserved{" "}

@@ -16,7 +16,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 function App() {
   return (
-    <Router>
+    <div>
       <Navbar />
 
       <Switch>
@@ -47,7 +47,8 @@ function App() {
           <OurTeam />
         </Route>
       </Switch>
-    </Router>
+      <Footer />
+    </div>
   )
 }
 
