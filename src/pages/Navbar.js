@@ -1,21 +1,21 @@
-import React, { useState } from "react"
-import { Link } from "react-router-dom"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCoffee } from "@fortawesome/free-solid-svg-icons"
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import {
   faYoutube,
   faGithub,
   faFacebook,
   faTwitter,
-} from "@fortawesome/free-brands-svg-icons"
+} from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false)
+  const [showMediaIcons, setShowMediaIcons] = useState(false);
 
   return (
     <nav className="Navbar">
       <div className="logo">
-        <span className="COM">DISCRETE</span>
+        <span className="COM">DISCRETE SOL</span>
       </div>
       <div className="combain">
         <ul
@@ -63,11 +63,11 @@ const Navbar = () => {
       <svg
         onClick={() => {
           if (!showMediaIcons) {
-            document.body.style.overflowY = "hidden"
+            document.body.style.overflowY = "hidden";
           } else {
-            document.body.style.overflowY = "visible"
+            document.body.style.overflowY = "visible";
           }
-          setShowMediaIcons(!showMediaIcons)
+          setShowMediaIcons(!showMediaIcons);
         }}
         xmlns="http://www.w3.org/2000/svg"
         class="hum_menu"
@@ -83,7 +83,7 @@ const Navbar = () => {
         />
       </svg>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
